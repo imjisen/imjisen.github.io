@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://imjisen.vercel.app/</id>
     <title>Jisen</title>
-    <updated>2021-03-14T09:49:59.278Z</updated>
+    <updated>2021-03-14T09:50:31.967Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://imjisen.vercel.app/"/>
     <link rel="self" href="https://imjisen.vercel.app/atom.xml"/>
@@ -32,7 +32,7 @@
         <updated>2021-03-13T03:00:22.000Z</updated>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2020 Is Coming.]]></title>
+        <title type="html"><![CDATA[2021 Is Coming.]]></title>
         <id>https://imjisen.vercel.app/post/2020-is-coming/</id>
         <link href="https://imjisen.vercel.app/post/2020-is-coming/">
         </link>
