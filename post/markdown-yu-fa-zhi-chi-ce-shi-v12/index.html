@@ -1,364 +1,347 @@
+<!-- 头部 -->
 <html>
+
 <head>
-    <meta charset="utf-8"/>
-<meta name="description" content=""/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Jisen</title>
+<meta name="description" content="温故而知新 Learn From the Past." />
 
-<title>Markdown 语法支持测试 v1.2 | Jisen</title>
+<link rel="shortcut icon" href="https://imjisen.vercel.app//favicon.ico">
+<meta name='robots' content='noindex,nofollow'>
 
-<link rel="shortcut icon" href="https://imjisen.vercel.app//favicon.ico?v=1618724990950">
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://imjisen.vercel.app//styles/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<SCRIPT language=javascript>
+            window.onerror=function() { return true; }
+</SCRIPT>
 
-<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script type='text/javascript' src='https://imjisen.vercel.app//media/js/jquery-1.12.4-wp.js'></script>
+<script type='text/javascript' src='https://imjisen.vercel.app//media/js/jquery-migrate.min-1.4.1.js'></script><!-- 应用迁移辅助插件 -->
 
-<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
-<!-- DEMO JS -->
-<!--<script src="media/scripts/index.js"></script>-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<link rel="stylesheet" href="https://imjisen.vercel.app//media/css/style.css">
+<link rel="stylesheet" href="https://imjisen.vercel.app//media/css/main.css">
+<link rel="stylesheet" href="https://imjisen.vercel.app//media/css/monokai_sublime.min.css">
+<!-- main.less -->
+<link rel="stylesheet"  href="https://imjisen.vercel.app//styles/main.css">
+<!-- 目录索引 start-->
+<link href="https://imjisen.vercel.app//media/plugins/tocify/toc.css" rel="stylesheet">
 
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+
+
+
+<link rel="stylesheet" href="https://imjisen.vercel.app//media/css/plugins/fancybox.min.css">
+<link rel="stylesheet" class="layout-css" id="layout-css" href="   ">
+
+<link rel="stylesheet" class="layout-blur-css" id="layout-blur-css" href=" https://imjisen.vercel.app//media/css/layout-blur-css.css ">
+ 
+
+<link rel="stylesheet" class="rtl-css" id="rtl-css" href="">
+
+<style>
+body[class*=background-img-]{background-size:cover;background-repeat:no-repeat;background-position:top right;background-attachment:fixed}body[class*=background-img-] .pcoded-navbar.theme-horizontal~.pcoded-header[class*=header-]{background-size:cover;background-repeat:no-repeat;background-position:top right;background-attachment:fixed}body.background-blue-img-1{background-image:url('/media/images/background.jpg');background-attachment:fixed;background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%}body.background-blue-img-1 .pcoded-navbar.theme-horizontal~.pcoded-header[class*=header-]{background-image:url('/media/images/background.jpg');background-attachment:fixed;background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%}
+</style>
 </head>
-<body>
-<div class="main gt-bg-theme-color-first">
-    <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <img class="user-avatar" src="/images/avatar.png" alt="头像">
-        <div class="site-name gt-c-content-color-first">
-            Jisen
-        </div>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            
-                <div class="nav-item">
-                    
-                        <a href="https://imjisen.vercel.app/" class="menu gt-a-link">
-                            Home
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/archives" class="menu gt-a-link">
-                            归档
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/tags" class="menu gt-a-link">
-                            标签
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/post/about" class="menu gt-a-link">
-                            关于
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="https://imjisen.vercel.app/post/project" class="menu gt-a-link">
-                            Project
-                        </a>
-                    
-                </div>
-            
-        </div>
-        <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1618724990950" action="/search/index.html">
-                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
-                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
-            </form>
-        </div>
-    </div>
-</nav>
+	
+<body class=" background-blue ">
 
-    <div class="post-container">
-        <div class="post-detail gt-bg-theme-color-second">
-            <article class="gt-post-content">
-                <h2 class="post-title">
-                    Markdown 语法支持测试 v1.2
-                </h2>
-                <div class="post-info">
-                    <time class="post-time gt-c-content-color-first">
-                        · 2021-03-14 ·
-                    </time>
-                    
-                </div>
-                <div class="post-content">
-                    <hr>
-<p>With</p>
-<hr>
-<h1 id="一级标题abc"><a href="#1">一级标题Abc</a></h1>
-<h2 id="二级标题abc">二级标题Abc</h2>
-<h3 id="三级标题abc">三级标题Abc</h3>
-<h4 id="四级标题abc">四级标题Abc</h4>
-<h5 id="五级标题abc">五级标题Abc</h5>
-<h6 id="六级标题abc">六级标题Abc</h6>
-<h1 id="一级标题-次行语法abc">一级标题 次行语法Abc</h1>
-<h2 id="二级标题-次行语法abc">二级标题 次行语法Abc</h2>
-<hr>
-<ul>
-<li>无序列表Abc</li>
-<li>无序列表Abc
-<ul>
-<li>二级无序列表Abc
-<ul>
-<li>三级无序列表Abc</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ol>
-<li>有序列表Abc</li>
-<li>有序列表Abc
-<ol>
-<li>二级有序列表Abc
-<ol>
-<li>三级有序列表Abc
-<ol>
-<li>四级有序列表Abc</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>有序列表Abc</li>
-</ol>
-<hr>
-<p><em>斜体Abc</em> <strong>加粗Abc</strong> <em><strong>斜体加粗Abc</strong></em></p>
-<p><s>删除线Abc</s> <mark>背景高亮Abc</mark></p>
-<p>++MD下划线Abc++ <u>html下划线</u></p>
-<p><font color=pink size=30>颜色大小Abc</font></p>
-<hr>
-<center>简略居中Abc</center>
-<p align="center">居中Abc</center>
-<p align="left">居左Abc</p>
-<p align="right">居右Abc</p>
-<p> 全角缩进Abc</p>
-<p> 半角缩进Abc</p>
-<hr>
-<h3 id="代码区块">代码区块</h3>
-<pre><code>单引号
-代码块
-</code></pre>
-<pre><code>制表符
-代码块
-</code></pre>
-<p><code>短代码块</code></p>
-<pre><code class="language-html">语法高亮
-&lt;img src=&quot;//example.png&quot; title=&quot;img pic&quot; alt= &quot;这是img图片&quot; width=&quot;150&quot;&gt;
-</code></pre>
-<h3 id="锚点由-一级标题abc-跳转">锚点(由 一级标题Abc 跳转)</h3>
-<p><span id="1">锚点尾 (一级标题)</span></p>
-<h3 id="链接">链接</h3>
-<p><a href="www.google.com" title="这是404小厂">链接Abc</a></p>
-<p><a href="mailto:cxplay@qq.com">cxplay@qq.com</a></p>
-<p>注脚语法Abc<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
-<h3 id="注释">注释</h3>
-<!-- 我是注释 -->
-<h3 id="杂项">杂项</h3>
-<p>[转意符](www.google.com)</p>
-<ul class="contains-task-list">
-<li class="task-list-item">
-<p><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5926057"><label class="task-list-item-label" for="task-item-5926057"> Todo list</label></p>
-</li>
-<li class="task-list-item">
-<p><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9224809"><label class="task-list-item-label" for="task-item-9224809"> Todo list</label></p>
-</li>
-</ul>
-<h3 id="参考式">参考式</h3>
-<p>谷歌又名<a href="www.google.com" title="Google">Google</a></p>
-<p>酷安又名<a href="www.coolapk.com" title="CoolAPK">CoolAPK</a></p>
-<h3 id="引用">引用</h3>
-<blockquote>
-<p>一级引用</p>
-<blockquote>
-<p>二级引用</p>
-<blockquote>
-<p>三级引用</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h3 id="表格">表格</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">表格</th>
-<th style="text-align:center">格式</th>
-<th style="text-align:left">语法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">居右</td>
-<td style="text-align:center">居中</td>
-<td style="text-align:left">居左</td>
-</tr>
-<tr>
-<td style="text-align:right">123</td>
-<td style="text-align:center">123</td>
-<td style="text-align:left">123</td>
-</tr>
-<tr>
-<td style="text-align:right">A</td>
-<td style="text-align:center">b</td>
-<td style="text-align:left">c</td>
-</tr>
-</tbody>
-</table>
-<h3 id="公式">公式</h3>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Can&#039;t use function &#039;$&#039; in math mode at position 248: …
-\end{vmatrix}
-$̲{$tep1}{\style{…'>\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
-\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
-\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
-\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\
-\end{vmatrix}
-${$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}
-</p>
-<h3 id="目录概览">目录概览</h3>
-<p>[TOC]</p>
-<h3 id="图片">图片</h3>
-<h4 id="标准式图片">标准式图片</h4>
-<figure data-type="image" tabindex="1"><img src="https://m.baidu.com/static/index/plus/plus_logo_web.png" alt="图片Abc" loading="lazy"></figure>
-<h4 id="参考式图片">参考式图片</h4>
-<figure data-type="image" tabindex="2"><img src="https://m.baidu.com/static/index/plus/plus_logo_web.png" alt="图片Abc" loading="lazy"></figure>
-<h4 id="html图片">html图片</h4>
-<img src="https://m.baidu.com/static/index/plus/plus_logo_web.png" title="img pic" alt= "这是img图片" width="150">
-<h4 id="base64图片">Base64图片</h4>
-<figure data-type="image" tabindex="3"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAPoA+gDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJ/4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wgDr/AAAAAAAAAAAAAAAAAAAAAgDr/CAOAAAAAAAAAAAAAAAAAAAv8IA6/wAAAAAAAAAAAAAAAAgDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL/AAgDr/AAAAAAAAAAAAAAAAAAACAOv8IA4AAAAAAAAAAAAAAAAAAC/wAIA6/wAAAAAAAAAAAAAACAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wCAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOAAAAv8IA6/wAAAAAACAOAv8CAOAv8CAOAv8CAOAv8CAOAv8CAOAv8CAOAv8IA4v8AAIA4v8AIA4v8AIA4AAAAL/AIA4v8AIA4v8AIA4AAAC/wgDr/AAAAAAAIA4C/wIA4C/wIA6/wAAAACAOAAAAC/wAAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDgAAAAAAAAAL/CAOv8AAAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAAAAAAAAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAAAAAAAC/wAIA6/wAAAAAAAAAAAAAAAAAAAAAAAACAOAAAAv8IA6/wAAAAAAgDgAAAAAAAAAAAAAL/CAOv8AAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAC/wgDr/AAAAAAAAAAAAAAAAAAAAAAAAAACAOAAAAAAAAAAv8IA6/wAAAAAAgDgAAAAAAAAAAAAAL/CAOv8AAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAAAAAAC/wAAAAgDr/CAOAAAAAAAAAv8IA6/wAAAAAAAAAAIA6/wgDgAAAAAAAAL/CAOv8AAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAAAAAAAAAAAv8ACAOv8AAAAAgDgAAAAAAAAAL/AAgDr/AAAAAIA4AAAAAAAAAAAAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAgDgAAAAAAAAAv8AAAAIA6/wgDgAAAAAAAAL/AAgDr/AAAAAAAAACAOv8IA4AAAAAAAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAgDgAAAAAAAAAAAAAL/CAOv8AAAAAAIA4AAAAAAAAAC/wgDr/AAAAAACAOAAAAAAAAAAAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAL/AACAOL/ACAOL/AAAAAAgDr/ACAOL/ACAOL/ACAOAAAAv8IA4C/wIA4C/wIA4C/wIA4C/wIA4C/wgDgAAAAAAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAAAAAAAAAAC/wAIA6/wAAAACAOAAAAAAAAAAv8ACAOv8AAAAAgDgAAAAAAAAAAAAAL/AAgDr/AAAAAIA4AAAC/wgDr/AAAAAACAOAAAAv8ACAOv8AAAAAAAAAAAAAAAgDgAAAAAAAAAAAAAAAAAAAAAAAL/AAgDr/AAAAAIA4AAAC/wgDr/AAAAAACAOAAAAAAAAAAAAAAv8IA6/wAAAAAAgDgAAAAAAAAAL/CAOv8AAAAAAIA4AAAAAAAAAAAAAC/wgDr/AAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAAAAAAAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAC/wgDr/AAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAAAAAAAAAAAL/AAgDr/AAAAAIA4AAAAAAAAAC/wAIA6/wAAAACAOAAAAAAAAAAAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wgDr/AAAAAAAAAAAAAAAACAOAAAAv8IA6/wAAAAAAgDgAAAAAAAAAAAAAL/CAOv8AAAAAAIA4AAAAAAAAAC/wgDr/AAAAAACAOAAAAAAAAAAAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wAIA6/wAAAAAAAAAAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAAAAAAAAAAAL/AAgDr/AAAAAIA4AAAAAAAAAC/wAIA6/wAAAACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOv8AAAAAAAgDgAAAL/CAOv8AAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAAL/AIA4v8AIA4v8AIA4AAAC/wgDr/AAAAAAAAAAAAAAAACAOAAAAv8IA6/wAAAAAAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDr/AAAAAAgDgAAAAAAAAAL/CAOv8AAAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAAAAAAAAAAAAAAAAAAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAAAAAAAAAAAIA4AAAC/wAIA6/wAAAAAAAAAAAAAAAAAAAAAAAACAOAAAAAAAAAAv8ACAOv8AAAAAAAAAAAAAAAAAAAAAAAAAgDgAAAL/CAOv8AAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAAAAAAAAAAAgDgAAAL/CAOv8AAAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAC/wgDr/AAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wgDr/AAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA6/wAAAAAACAOL/ACAOL/ACAOv8CAOC/wIA4C/wIA4AAAAAv8ACAOAv8CAOAv8CAOAC/wAgDi/wAgDr/AgDgv8CAOAv8CAOAAAAAL/AAgDr/AAAAAIA4v8AIA4v8AIA6/wAAAAAIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAOv8IA4AAAAAAAAAAAAAAL/AAAACAOv8IA4AAAAAAAAC/wgDr/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgDr/CAOAAAAAAAAAAAAAAC/wAAAAgDr/CAOAAAAAAAAAv8ACAOv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgDgAAAL/CAOv8AAAAAAAAAACAOv8IA4AAAAAAAAAAAAAAAAAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAAAAAAAAAAAgDgAAAL/CAOv8AAAAAAAAAACAOv8IA4AAAAL/AAAACAOv8IA4AAAAAAAAAAAAAAAAAAAAAAAAL/AAAAAAAAAAAAAAAAIA4AAAC/wAIA6/wAAAAAAAAAgDr/CAOAAAAAAAAAAAAAAAAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAAAAAAAAAAAIA4AAAC/wAIA6/wAAAAAAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAAAAAAAAAAAAAAAAC/wAAAAAAIA4C/wIA4C/wIA6/wAAAACAOL/ACAOL/ACAOv8CAOC/wIA4C/wIA4C/wAAAAgDr/CAOAAAAAL/ACAOL/ACAOL/CAOAAAAAAAAAv8ACAOv8AAAAAgDi/wAgDi/wAgDr/AAAAAAAAAAAAAAAAgDi/wAgDi/wAgDr/AgDgv8CAOAv8CAOAv8AAAAIA6/wAgDi/wAgDi/wACAOAv8CAOAv8IA4AAAAAC/wAgDi/wAgDi/wgDgAAAAAAAAAv8AAIA4v8AIA4v8AAgDgL/AgDgL/AgDgAAAAC/wgDr/AAAAAAAAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAv8IA6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA6/wgDgAAAAv8AAAAAAAAAAgDgAAAAAAAAAv8AAAAIA6/wgDgAAAAAAAAL/AAgDr/AAAAAIA4AAAAAAAAAC/wAIA6/wAAAAAAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAv8ACAOv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA6/wgDgAAAAv8AAAAAAAAAAgDgAAAAAAAAAv8AAAAIA6/wgDgAAAAAAAAL/CAOv8AAAAAAIA4AAAAAL/AAAAAAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAC/wAIA6/wAAAAAAAAAgDr/CAOAAAAAAAAAv8ACAOv8AAAAAgDgAAAAAAAAAv8AAAAAAAAAAgDgAAAL/CAOv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAAAL/AAAAAAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAC/wgDr/AAAAAAAAAAAgDr/CAOAAAAAAAAAv8IA6/wAAAAAAgDgAAAAAAAAAv8AAAAAAAAAAgDgAAAL/AAgDr/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAAAL/AgDgL/AgDgL/AgDgL/AgDgL/AgDgAAAAAAAAAAAAAAAL/AACAOL/ACAOL/ACAOL/ACAOL/ACAOv8AAAAAAAAAAAIA6/wgDgAAAAC/wAgDi/wAgDr/AAIA4L/AgDgL/AgDgAAAAAL/AACAOL/ACAOL/AAAAAAAAAAACAOL/ACAOL/ACAOv8CAOC/wIA4C/wIA4C/wIA4C/wIA4C/wIA6/wAAAAAAAAACAOC/wIA4C/wIA4C/wAAAACAOC/wIA4C/wIA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv8ACAOv8AAAAAAAAAAAAAAAAAAAIA6/wgDgAAAAv8AAAAIA6/wgDgAAAAAAAAL/AAgDr/AAAAAAAAAAAAAAAAAAACAOv8IA4AAAAAAAAC/wgDr/AAAAAAAAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv8IA6/wAAAAAAAAAAAAAAAAAAAAIA6/wgDgAAAAv8AAAAIA6/wgDgAAAAAAAAL/CAOv8AAAAAAAAAAAAAAAAAAAACAOv8IA4AAAAAAAAC/wAIA6/wAAAAAAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAAC/wAAAAgDr/CAOAAAAAAAAAv8IA6/wAAAAAAAAAAAAAAAAgDgAAAL/CAOv8AAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAAAAAAC/wAAAAgDr/CAOAAAAC/wAAAAAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAAAAAAAv8AAAAIA6/wgDgAAAAv8AAAAAAAAAAAAAAAAAAAAIA6/wgDgAAAAAAAAL/AAgDr/AAAAAAAAAAAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAgDgAAAAAAAAAv8AAAAIA6/wgDgAAAAv8AAAAAAAAAAgDgAAAL/CAOv8AAAAAAIA4AAAAAAAAAL/AAAACAOv8IA4AAAAL/AAAAAAAAAAAAAAAAAAAACAOv8AIA4v8AIA4v8AIA4v8AIA4v8AIA6/wIA4L/AgDgL/AgDgL/AAAAAIA4L/AgDgL/AgDgAv8AIA4v8AIA6/wIA4L/AgDgL/AgDgAv8AIA4v8AIA6/wACAOC/wIA4C/wIA4AL/ACAOL/ACAOL/CAOAAAAC/wAAAAgDr/CAOAAAAC/wIA4C/wIA4C/wIA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAAAAAAL/AAAACAOv8IA4AAAAL/AgDgL/AgDgL/AgDr/AAAAAAAIA4C/wIA4C/wIA4C/wAAAAAAAAAAAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAIA4AAAAAAAAAL/AAAACAOv8IA4AAAAAAAAC/wAIA6/wAAAACAOAAAAAC/wAAAAAAAAAAAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAAAAAAL/AAAACAOv8IA4AAAAAAAAC/wgDr/AAAAAACAOAAAAAAAAAAAAAAAC/wAAAAgDr/CAOAAAAC/wAAAAAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAAAAAAAAAAAIA4AAAAAAAAAL/AAAAAAAAAAIA4AAAC/wgDr/AAAAAAAAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAv8ACAOv8AAAAAgDgAAAAAAAAAAAAAAAv8AAAAIA6/wgDgAAAAv8AAAAAAAAAAgDgAAAL/CAOv8AAAAAAIA4AAAC/wAIA6/wAAAAAAAAAAAAAACAOAAAAAAAAAC/wAAAAAAAAACAOAAAAv8ACAOv8AAAAAAAAAIA6/wgDgAAAAv8AAAAIA6/wgDgAAAAAAAAL/CAOv8AAAAAAIA4AAAAAAv8AIA4v8AIA4v8AIA4v8AIA4v8AAgDgL/AgDgL/CAOL/AIA4v8AIA4v8AAgDgL/AgDgL/AgDgL/AgDgL/AgDgAv8AIA4v8AIA6/wACAOC/wIA4C/wIA4AAAAAv8IA4C/wIA4C/wIA4C/wAAAACAOC/wIA4C/wIA4AL/ACAOL/ACAOL/CAOAAAAC/wAAAACAOC/wIA4C/wIA4AAAAAv8IA4C/wIA4C/wIA4C/wAAAAgDr/CAOAAAAC/wIA4C/wIA4C/wgDgAAAAAL/ACAOL/ACAOv8AAgDgv8CAOAv8CAOAAAAAAAv8AAAAAAAAAAgDgAAAL/CAOv8AAAAAAIA4AAAAAAAAAL/AAAACAOv8IA4AAAAAAAAAAAAAAL/AAAACAOv8IA4AAAAL/AAAACAOv8IA4AAAAL/AAAACAOv8IA4AAAAAAAAAAAAAAL/AAAACAOv8IA4AAAAAAAAAAAAAAL/AAAACAOv8IA4AAAAAAAAAAL/AAAAAAAAAAIA4AAAC/wAIA6/wAAAACAOAAAAAAAAAC/wAAAAgDr/CAOAAAAAAAAAAAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAAAAAAC/wAAAAgDr/CAOAAAAAAAAAAAAAAC/wAAAAgDr/CAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wAAAAAAAAACAOAAAAv8IA6/wAAAAAAAAAAIA6/wgDgAAAAv8AAAAAAAAAAAAAAIA6/wgDgAAAAv8AAAAAAAAAAgDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv8AAAAIA6/wgDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv8AAAAAAAAAAgDgAAAL/AAgDr/AAAAAAAAACAOv8IA4AAAAL/AAAAAAAAAAAAAACAOv8IA4AAAAL/AAAAAAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAL/AAAACAOv8IA4AAAAAAAAAAAv8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AAAAAAAAAAAIA4v8AIA4v8AIA6/wAAAAAAgDgL/AgDgL/CAOAAAAAL/AAAAAIA4L/AgDgL/AgDgL/AgDgL/AgDgL/CAOAAAAAL/AAAAAIA4L/AgDgL/AgDgAAAAAL/AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4AAAAL/AIA4v8AIA4v8AAAAACAOv8AIA4v8AIA4v8AIA4AAAAAL/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAAAAAAAL/AAAACAOv8IA4AAAAAAAAAAAAAAL/AAAACAOv8IA4AAAAAAAAC/wgDr/AAAAAAAAAAAAAAAACAOAAAAv8IA6/wAAAAAAAAAAAAAAAAgDgAAAAAv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgDgAAAAAAAAAv8AAAAIA6/wgDgAAAAAAAAAAAAAAv8AAAAIA6/wgDgAAAAAAAAL/AAgDr/AAAAAAAAAAAAAAAIA4AAAC/wAIA6/wAAAAAAAAAAAAAACAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAAAAAAAAAAAIA4AAAC/wgDr/AAAAAACAOAAAAAAAAAAAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAC/wgDr/AAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL/CAOv8AAAAAAIA4AAAC/wAIA6/wAAAAAAAAAAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAAAAAAAAAAAL/AAgDr/AAAAAIA4AAAC/wgDr/AAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAIA4AAAAAAAAAAL/AACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOAAAAv8ACAOv8AAAAAgDgAAAL/CAOAv8CAOAv8CAOAv8CAOAv8CAOAv8CAOv8AAAAAgDi/wAgDi/wAgDr/AgDgv8CAOAv8CAOAC/wAgDi/wAgDi/wAgDi/wAgDi/wAgDgAAAL/CAOv8AAAAAAIA4v8AIA4v8AIA6/wAAAAAACAOAAAAv8IA4C/wIA4C/wIA4AL/ACAOL/ACAOv8AAgDgv8CAOAv8CAOAAAAAAAAAAAL/AAgDr/AAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAC/wgDr/AAAAAACAOAAAAAAAAAAAAAAv8IA6/wAAAAAAAAAAIA6/wgDgAAAAv8AAAAAAAAAAgDgAAAL/AAgDr/AAAAAAAAAAAAAAAIA4AAAAAAAAAL/AAAACAOv8IA4AAAAAAAAAAAAAAC/wgDr/AAAAAAAAAAAAAAAAAAAAAAAAAACAOAAAAv8ACAOv8AAAAAgDgAAAAAAAAAAAAAL/AAgDr/AAAAAAAAACAOv8IA4AAAAL/AAAAAAAAAAIA4AAAC/wgDr/AAAAAAAAAAAAAAAACAOAAAAAAAAAC/wAAAAgDr/CAOAAAAAAAAAAAAAAAv8ACAOv8AAAAAgDgAAAAAAAAAAAAAL/AAgDr/AAAAAIA4AAAC/wgDr/AAAAAAAAAAAAAAAAAAAAAAAAAACAOAAAAv8ACAOv8AAAAAAAAAIA6/wgDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAL/AAgDr/AAAAAAAAACAOv8IA4AAAAL/AAAAAAIA4AAAC/wgDr/AAAAAACAOAAAAAAAAAAAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAC/wgDr/AAAAAAAAAAAgDr/CAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv8IA6/wAAAAAAAAAAIA6/wgDgAAAAv8AAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAAAAAAAAAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAAAAAAgDgv8CAOAv8CAOAv8AAAAAAAAAAgDgAAAL/AAgDgL/AgDgL/AgDgL/AgDgL/AgDgL/CAOAAAAAAv8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4v8AIA4AAAC/wAIA6/wAAAAAAAAAgDr/ACAOL/ACAOL/AAAAAAACAOAAAAv8IA6/wAAAAAAgDgAAAAAAAAAAAAAL/CAOv8AAAAAAIA4AAAC/wAIA6/wAAAAAAAAAgDr/CAOAAAAC/wAAAAAAAAACAOAAAAAAAAAAAAAAAAAAAC/wAAAAAAAAAAAAAAAAAAACAOAAAAv8IA6/wAAAAAAAAAAAAAAAAAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAAAAAAAAAAC/wAIA6/wAAAACAOAAAAv8IA6/wAAAAAAAAAAIA6/wgDgAAAAv8AAAAAAAAAAgDgAAAAAAAAAAAAAAAAAAAv8AAAAAAAAAAAAAAAAAAAAgDgAAAL/AAgDr/AAAAAAAAAAAAAAAAAAAAAIA4AAAC/wgDr/AAAAAACAOAAAAAAAAAAAAAAv8IA6/wAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAAAAAAAAAAAAAAAAL/AAAAAAAAAAAAAACAOv8IA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wAIA6/wAAAACAOAAAAAAAAAAAAAAv8ACAOv8AAAAAgDgAAAL/CAOv8AAAAAAIA4AAAAAAAAAAAAAAAAAAAL/AAAAAAAAAAAAAACAOv8IA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wgDr/AAAAAACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOL/ACAOv8AAAAACAOAAAAv8ACAOv8AAAAAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDgAAAAv8AgDi/wAgDi/wACAOAv8CAOAv8CAOAv8CAOAv8CAOAv8CAOAv8CAOAv8IA4v8AgDi/wAgDi/wAgDi/wAgDi/wAgDi/wgDgAAAAAAAAAAAAAAAAAAAAAAAAC/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDi/wAgDgAAAL/AAgDr/AAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAC/wgDr/AAAAAAAAAAAAAAAACAOAAAAv8IA6/wAAAAAAgDgAAAAAAAAAAAAAL/CAOv8AAAAAAAAAACAOv8IA4AAAAAAAAAAAAAAAAAAAAAAAAL/AAAAAAAAAAAAAAAAIA4AAAC/wgDr/AAAAAAAAAAAAAAAAAAAAAAAAAACAOAAAAv8ACAOv8AAAAAAAAAAAAAAAgDgAAAL/AAgDr/AAAAAIA4AAAAAAAAAAAAAC/wAIA6/wAAAAAAAAAgDr/CAOAAAAAAAAAAAAAAAAAAAAAAAAC/wAAAAAAAAAAAAAAACAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv8IA6/wAAAAAAAAAAAAAAAAAAAAIA6/wgDgAAAAv8AAAAIA6/wgDgAAAAAAAAL/CAOv8AAAAAAAAAACAOv8IA4AAAAL/AAAACAOv8IA4AAAAL/AAAACAOv8IA4AAAAL/AAAAAAAAAAIA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/wAIA6/wAAAAAAAAAAAAAAAAAAAgDr/CAOAAAAC/wAAAAgDr/CAOAAAAAAAAAv8ACAOv8AAAAAAAAAIA6/wgDgAAAAv8AAAAIA6/wgDgAAAAv8AAAAIA6/wgDgAAAAv8AAAAAAAAAAgDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL/AAAAAAAAAAAAAAAAAAAAIA4AAAAAv8AAAAIA4AAAAAAAAAL/AAAAAAAAAAIA4AAAAAv8AAAAIA4AAAAAv8AAAAIA4AAAAAv8AAAAAAAAAAgDgAAAAA/9k=" alt="QR" loading="lazy"></figure>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>我是注脚Abc <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
+<div id="body" class=" container box-layout ">
 
-                </div>
-            </article>
-        </div>
-
-        
-            <div class="next-post">
-                <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://imjisen.vercel.app/post/feng/" class="post-title gt-a-link">
-                    风
-                </a>
+      <!-- [ 预装机 ] start -->
+      <div class="loader-bg" style="display: none">
+            <div class="loader-track">
+                  <div class="loader-fill"></div>
             </div>
-        
+      </div>
+      <!-- [ 预装机 ] End -->
+<!--头部 over-->
 
+        <!-- 侧导航 -->
         
+<nav class="
+pcoded-navbar menu-light
+ ">
+  <div class="navbar-wrapper  ">
+    <div class="navbar-content scroll-div ">
 
-        
-            
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-<script>
-    // md5.min.js
-    !function(n){
-        "use strict";
-        function d(n,t){var r=(65535&n)+(65535&t);return(n>>16)+(t>>16)+(r>>16)<<16|65535&r}
-        function f(n,t,r,e,o,u){return d((c=d(d(t,n),d(e,u)))<<(f=o)|c>>>32-f,r);var c,f}
-        function l(n,t,r,e,o,u,c){return f(t&r|~t&e,n,t,o,u,c)}
-        function v(n,t,r,e,o,u,c){return f(t&e|r&~e,n,t,o,u,c)}
-        function g(n,t,r,e,o,u,c){return f(t^r^e,n,t,o,u,c)}
-        function m(n,t,r,e,o,u,c){return f(r^(t|~e),n,t,o,u,c)}
-        function i(n,t){var r,e,o,u,c;n[t>>5]|=128<<t%32,n[14+(t+64>>>9<<4)]=t;var f=1732584193,i=-271733879,a=-1732584194,h=271733878;for(r=0;r<n.length;r+=16)f=l(e=f,o=i,u=a,c=h,n[r],7,-680876936),h=l(h,f,i,a,n[r+1],12,-389564586),a=l(a,h,f,i,n[r+2],17,606105819),i=l(i,a,h,f,n[r+3],22,-1044525330),f=l(f,i,a,h,n[r+4],7,-176418897),h=l(h,f,i,a,n[r+5],12,1200080426),a=l(a,h,f,i,n[r+6],17,-1473231341),i=l(i,a,h,f,n[r+7],22,-45705983),f=l(f,i,a,h,n[r+8],7,1770035416),h=l(h,f,i,a,n[r+9],12,-1958414417),a=l(a,h,f,i,n[r+10],17,-42063),i=l(i,a,h,f,n[r+11],22,-1990404162),f=l(f,i,a,h,n[r+12],7,1804603682),h=l(h,f,i,a,n[r+13],12,-40341101),a=l(a,h,f,i,n[r+14],17,-1502002290),f=v(f,i=l(i,a,h,f,n[r+15],22,1236535329),a,h,n[r+1],5,-165796510),h=v(h,f,i,a,n[r+6],9,-1069501632),a=v(a,h,f,i,n[r+11],14,643717713),i=v(i,a,h,f,n[r],20,-373897302),f=v(f,i,a,h,n[r+5],5,-701558691),h=v(h,f,i,a,n[r+10],9,38016083),a=v(a,h,f,i,n[r+15],14,-660478335),i=v(i,a,h,f,n[r+4],20,-405537848),f=v(f,i,a,h,n[r+9],5,568446438),h=v(h,f,i,a,n[r+14],9,-1019803690),a=v(a,h,f,i,n[r+3],14,-187363961),i=v(i,a,h,f,n[r+8],20,1163531501),f=v(f,i,a,h,n[r+13],5,-1444681467),h=v(h,f,i,a,n[r+2],9,-51403784),a=v(a,h,f,i,n[r+7],14,1735328473),f=g(f,i=v(i,a,h,f,n[r+12],20,-1926607734),a,h,n[r+5],4,-378558),h=g(h,f,i,a,n[r+8],11,-2022574463),a=g(a,h,f,i,n[r+11],16,1839030562),i=g(i,a,h,f,n[r+14],23,-35309556),f=g(f,i,a,h,n[r+1],4,-1530992060),h=g(h,f,i,a,n[r+4],11,1272893353),a=g(a,h,f,i,n[r+7],16,-155497632),i=g(i,a,h,f,n[r+10],23,-1094730640),f=g(f,i,a,h,n[r+13],4,681279174),h=g(h,f,i,a,n[r],11,-358537222),a=g(a,h,f,i,n[r+3],16,-722521979),i=g(i,a,h,f,n[r+6],23,76029189),f=g(f,i,a,h,n[r+9],4,-640364487),h=g(h,f,i,a,n[r+12],11,-421815835),a=g(a,h,f,i,n[r+15],16,530742520),f=m(f,i=g(i,a,h,f,n[r+2],23,-995338651),a,h,n[r],6,-198630844),h=m(h,f,i,a,n[r+7],10,1126891415),a=m(a,h,f,i,n[r+14],15,-1416354905),i=m(i,a,h,f,n[r+5],21,-57434055),f=m(f,i,a,h,n[r+12],6,1700485571),h=m(h,f,i,a,n[r+3],10,-1894986606),a=m(a,h,f,i,n[r+10],15,-1051523),i=m(i,a,h,f,n[r+1],21,-2054922799),f=m(f,i,a,h,n[r+8],6,1873313359),h=m(h,f,i,a,n[r+15],10,-30611744),a=m(a,h,f,i,n[r+6],15,-1560198380),i=m(i,a,h,f,n[r+13],21,1309151649),f=m(f,i,a,h,n[r+4],6,-145523070),h=m(h,f,i,a,n[r+11],10,-1120210379),a=m(a,h,f,i,n[r+2],15,718787259),i=m(i,a,h,f,n[r+9],21,-343485551),f=d(f,e),i=d(i,o),a=d(a,u),h=d(h,c);return[f,i,a,h]}
-        function a(n){var t,r="",e=32*n.length;for(t=0;t<e;t+=8)r+=String.fromCharCode(n[t>>5]>>>t%32&255);return r}
-        function h(n){var t,r=[];for(r[(n.length>>2)-1]=void 0,t=0;t<r.length;t+=1)r[t]=0;var e=8*n.length;for(t=0;t<e;t+=8)r[t>>5]|=(255&n.charCodeAt(t/8))<<t%32;return r}
-        function e(n){var t,r,e="0123456789abcdef",o="";for(r=0;r<n.length;r+=1)t=n.charCodeAt(r),o+=e.charAt(t>>>4&15)+e.charAt(15&t);return o}
-        function r(n){return unescape(encodeURIComponent(n))}
-        function o(n){return a(i(h(t=r(n)),8*t.length));var t}
-        function u(n,t){return function(n,t){var r,e,o=h(n),u=[],c=[];for(u[15]=c[15]=void 0,16<o.length&&(o=i(o,8*n.length)),r=0;r<16;r+=1)u[r]=909522486^o[r],c[r]=1549556828^o[r];return e=i(u.concat(h(t)),512+8*t.length),a(i(c.concat(e),640))}(r(n),r(t))}
-        function t(n,t,r){return t?r?u(t,n):e(u(t,n)):r?o(n):e(o(n))}
-        "function"==typeof define&&define.amd?define(function(){return t}):"object"==typeof module&&module.exports?module.exports=t:n.md5=t;
-    }(this);
-</script>
-
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'e5a9ec2cdfdef7d8d618',
-    clientSecret: 'b2ed9e38e68eaeff72e159815e1bfac7bfc1a0be',
-    repo: 'comments',
-    owner: 'imjisen',
-    admin: ['imjisen'],
-    id: md5(location.pathname),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false       // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-            
-
-            
-        
-
-        
-
-        <div class="site-footer gt-c-content-color-first">
-    <div class="slogan gt-c-content-color-first">温故而知新 Learn From the Past.</div>
-    <div class="social-container">
-        
-            
-                <a href="https://github.com/imjisen" target="_blank">
-                    <i class="fab fa-github gt-c-content-color-first"></i>
-                </a>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
+      <ul class="nav pcoded-inner-navbar ">
+        <li class="nav-item pcoded-menu-caption">
+          <label>导航</label>
+        </li>
+      </ul>
+      <!-- 导航 -->
+      <ul class="nav pcoded-inner-navbar">
+                  
+                  
+                  <li>
+                    
+                    <a href="https://imjisen.vercel.app//" target="_self">
+                      <span class="pcoded-micon"><i class="feather icon-globe"></i></span>Home
+                    </a>
+                  </li>
+                  
+                  
+                  <li>
+                    
+                    <a href="/archives/" target="_self">
+                      <span class="pcoded-micon"><i class="feather icon-list"></i></span>归档
+                    </a>
+                  </li>
+                  
+                  
+                  <li>
+                    
+                    <a href="/tags/" target="_self">
+                      <span class="pcoded-micon"><i class="feather icon-tag"></i></span>标签
+                    </a>
+                  </li>
+                  
+                  
+                  <li>
+                    
+                    <a href="/post/about/" target="_self">
+                      <span class="pcoded-micon"><i class="feather icon-user"></i></span>关于
+                    </a>
+                  </li>
+                  
+                  
+                  <li>
+                    
+                    <a href="https://imjisen.vercel.app/post/project/" target="_self">
+                      <span class="pcoded-micon"><i class="feather icon-globe"></i></span>Project
+                    </a>
+                  </li>
+                  
+      </ul>
+      <ul class="nav pcoded-inner-navbar ">
+        <li class="nav-item pcoded-menu-caption">
+          <label>组成</label>
+        </li>
+      </ul>
+      <!-- 把标签做成分类 -->
+      <ul class="nav pcoded-inner-navbar ">
+        <li>
+          <a href="javascript:void(0)" no-pjax="" class="nav-link pcoded-submenu-click">
+            <span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span
+              class="pcoded-mtext">分类</span></a>
+          <ul class="pcoded-submenu" data="off" style="display: none;">
+                            <!-- 分类列表 -->
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          <li>
+                            <a href="https://imjisen.vercel.app/tag/068-n_4Wv/" rel="1">
+                              <span class="pcoded-micon"><i class="feather icon-activity"></i></span><span>Gridea</span></a>
+                          </li>
+                          
+                            <!-- 分类列表 / -->
+          </ul>
+        </li>
+      </ul>
+      <!-- 把标签做成分类 结束-->
     </div>
-    <div class="footer-info">
-        
+  </div>
+</nav>
+        <!--侧导航 over-->
+
+        <!-- 顶导航 -->
+        <!-- [ 顶部/标头 ]  start -->
+<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue ">
+    <div class="m-header">
+        <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+        <a href="https://imjisen.vercel.app/" class="b-brand">
+            <!-- ========   change your logo hear   ============ -->
+                        <img src="https://imjisen.vercel.app//media/images/logo.png" alt="" class="logo" width="68" height="auto">
+                    </a>
+        <a href="#!" class="mob-toggler">
+            <i class="feather icon-more-vertical"></i>
+        </a>
     </div>
-    <div>
-        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
-                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://imjisen.vercel.app//atom.xml" target="_blank">RSS</a></a>
+    <div class="collapse navbar-collapse">
+        <!-- <ul id="menu-gu%e8%87%aa%e7%94%a8-1" class="navbar-nav top-navbar-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-132"><a href="" aria-current="page">首页</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="sample-page/index.html">示例页面</a></li>
+</ul> -->
+
+
+
+
+        <ul class="navbar-nav ml-auto" style="
+    height: 0px;
+">
+
+
+            <li class="nav-item m-r-10"><a href="javascript:void(0)" class="nav-switch-dark-mode text-lg" title="关灯">
+                <i class="feather icon-moon"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#!" class="pop-search text-lg"><i class="feather icon-search"></i></a>
+                <form class="search-bar" id="searchform" method="get" role="search" action="http://127.0.0.1">
+                    <input type="text" name="s" class="form-control border-0 shadow-none" placeholder="请输入关键词搜索">
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </form>
+            </li>
+        </ul>
+
+      
     </div>
+
+
+</header>
+<!-- [ 顶部/标头 ] end -->
+        <!--顶导航 over-->
+
+        <!-- 内容 -->
+<section class="pcoded-main-container" id="content">
+    <div class="pcoded-content">
+        <div class="row">
+            <!-- 调用分类 -->
+            
+
+        </div>
+    </div>
+    <!-- [ 版权 ] start -->
+    <!-- 版权 -->
+<footer class="footer card py-3 py-lg-3">
+<div class="container">
+	<div class="footer-copyright text-xs px-3">
+		<div class="float-left">
+			Copyright © 2020 
+			
+		</div>
+		<div class="float-right d-none">
+			  Designed by <a href="//803344.xyz/" title="Art" target="_blank">Art</a>
+			移植 <a href="//www.hankin.cn/" title="" rel="home">hankin主题</a>
+			</div>
+	</div>
 </div>
+</footer>
+    <!-- [ 版权 ] end -->
+</section>
+        <!--内容 over-->
 
-<script>
-  hljs.initHighlightingOnLoad()
+    <!-- 尾部 -->
+    </div>
+<!--定义全局变量--> 
+<script type="text/javascript">
+window.THEME_URL = 'https://imjisen.vercel.app/'; //获取域名地址 
+window.ENCODE_URI_COMPONENT_TITLE = document.title; 
+window.ENCODE_URI_COMPONENT_LINK = this.location.href; 
+window.ENCODE_URI_COMPONENT_IMAGE = 'https://imjisen.vercel.app//media/images/thumb.png';//分享出去的海波
+window.IS_PAGE_SINGLE = 0;
+window.IS_SLIDER = 1;
 </script>
 
+
+
+
+<script type="text/javascript" src="https://imjisen.vercel.app//media/js/plugins/jquery.js"></script>
+<script type="text/javascript" src="https://imjisen.vercel.app//media/js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="https://imjisen.vercel.app//media/js/plugins/popper.min.js"></script>
+<script type="text/javascript" src="https://imjisen.vercel.app//media/js/plugins/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://imjisen.vercel.app//media/js/plugins/highlight/highlight.min.js"></script>
+<script type="text/javascript" src="https://imjisen.vercel.app//media/js/plugins/pjax.js"></script>
+
+
+
+<!-- 分享插件 start-->
+<div id="cz-leftside-share"></div>
+<script type="text/javascript" src="https://imjisen.vercel.app//media/js/plugins/jquery.share.min.js"></script>
+<!-- 分享插件 end-->
+<!-- 灯箱 -->
+  <script type="text/javascript" src="https://imjisen.vercel.app//media/js/plugins/fancybox.min.js"></script>
+  
+
+
+<!-- 文章目录 -->
+<script src="https://imjisen.vercel.app//media/plugins/tocify/toc.js"></script>
+<!-- 无刷新 -->
+
+<script src="https://imjisen.vercel.app//media/plugins/jquery/jquery.infinitescroll.min.js"></script>
+<!-- 自定义 -->
+<script type="text/javascript" src="https://imjisen.vercel.app//media/js/main.js"></script>
+
+
+
+
+
+
+
+
+<!--网站统计代码 start-->
+<!--网站统计代码 end-->
+<!-- [ modal ] start -->
+ <div class="modal fade bd-example-modal-lg" id="gratuityModal" tabindex="-1" role="dialog" aria-labelledby="gratuityModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="gratuityModalLabel">赞赏作者</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="qr_pay">
+                        <img src="https://imjisen.vercel.app//media/images/zfb.jpg" class="qr_pay_alipay" style="display: block;">
+                        <img src="https://imjisen.vercel.app//media/images/wx.jpg" class="qr_pay_wechatpay" style="display: none;">
+                   </div>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center text-muted">请通过微信、支付宝 APP 扫一扫 </p>
+        <p class="text-center text-muted">感谢您对作者的支持！</p>
+        <p class="text-center text-muted"> 
+          <a class="btn btn-primary btn-like btn-link-like2" href="javascript:void(0);" id="qr_pay_alipay_click">&nbsp;支付宝</a>
+          <a class="btn btn-success mt-3 mb-3" href="javascript:void(0);" id="qr_pay_wechatpay_click">微信支付</a>
+        </p>
+      </div>
     </div>
+  </div>
 </div>
+<script type="text/javascript">
+  $("#qr_pay_alipay_click").click(function(){
+        $(".qr_pay_wechatpay").hide();
+      $(".qr_pay_alipay").css({"display":"block"});
+  });
+  $("#qr_pay_wechatpay_click").click(function(){
+      $(".qr_pay_wechatpay").css({"display":"block"});
+      $(".qr_pay_alipay").hide();
+  });
+
+    // 重载函数
+    function hljsLoino() {
+
+
+  }
+  hljsLoino();
+</script>
+
+
+<!-- [ modal ] end -->
 </body>
+
 </html>
+    <!--尾部 over-->
