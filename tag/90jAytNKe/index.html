@@ -59,8 +59,8 @@ body[class*=background-img-]{background-size:cover;background-repeat:no-repeat;b
       <!-- [ 预装机 ] End -->
 <!--头部 over-->
 
-<!-- 侧导航 -->
-
+        <!-- 侧导航 -->
+        
 <nav class="
 pcoded-navbar menu-light
  ">
@@ -231,10 +231,10 @@ pcoded-navbar menu-light
     </div>
   </div>
 </nav>
-<!--侧导航 over-->
+        <!--侧导航 over-->
 
-<!-- 顶导航 -->
-<!-- [ 顶部/标头 ]  start -->
+        <!-- 顶导航 -->
+        <!-- [ 顶部/标头 ]  start -->
 <header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue ">
     <div class="m-header">
         <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
@@ -279,125 +279,113 @@ pcoded-navbar menu-light
 
 </header>
 <!-- [ 顶部/标头 ] end -->
-<!--顶导航 over-->
+        <!--顶导航 over-->
 
-<!-- 内容 -->
-<!-- [ tags主要内容 ] start -->
+        <!-- 内容 -->
 <section class="pcoded-main-container" id="content">
-  <div class="pcoded-content">
-    <div class="row">
-      <div class="col-md-12">
-        <!-- [ 公告 ] start -->
-        <!-- 公告 -->
-			<div class="notice breadcrumb" id="notice">
-				<ul class="notice-list" style="margin-top: 0px;">
+    <div class="pcoded-content">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- [ 面包屑 ] start -->
+                <ul class="breadcrumb" itemscope="">
+                    <a itemprop="breadcrumb" href="https://imjisen.vercel.app/">首页</a> &nbsp;&nbsp;›&nbsp;&nbsp; <a
+                        itemprop="breadcrumb" href="https://imjisen.vercel.app//tags">分类</a> &nbsp;&nbsp;›&nbsp;&nbsp;
+                    <span class="current">test</span>
+                </ul>
+                <!-- [ 面包屑 ] end -->
+                <!-- [清单] start -->
+                <div class="list-cover list-rounded mb-3 mb-md-4 animated fadeIn">
+                    <div class="list-item list-overlay-content overlay-hover bg-dark">
+                        <div class="media media-5x1">
+                            <div class="media-content"
+                                style="background-image:url('/media/images/tag.png')">
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="list-content p-3 p-md-4">
+                            <div class="list-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="text-xl">test</div>
+                                    <div class="flex-fill"></div>
+                                    <div class="text-light"> 
+                                        <i class="text-xl iconfont icon-file-text-line mr-1"></i>
+                                        <span class="text-xs ">test下的文章</span>
+                                    </div>
+                                </div>
+                                <div class="border-top border-white mt-2 mt-md-3 pt-2 pt-md-3">
+                                    <div class="text-sm h-2x">test</div>
+                                    <div class="border-theme bg-primary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-home list-grid list-grid-padding div-black-745" id="list-home">
+                    
+                    
+                    <!-- 如果不是置顶文章 -->
+                    
 
 
-<li>
-	<a href="/" target="_blank" title="Stay Hungry, Stay Foolish.">
-		<i class="feather icon-volume-2"></i>Stay Hungry, Stay Foolish.
-	</a>
-</li>
 
 
-				</ul>
-			</div>
-										
-        <!-- [ 公告 ] end -->
-        <!-- [清单] start -->
-
-
-        <div class="github_page">
-          <nav class="loading-nav text-center m-t-lg m-b-lg">
-
-            <p class="infinite-scroll-request alert alert-danger" role="alert">
-              <i class="feather icon-activity"></i> 正在加载中~ ( Github仅允许每分钟查询10次 ! )
-            </p>
-          </nav>
-          <nav class="error-nav hide text-center m-t-lg m-b-lg">
-            <p class="infinite-scroll-request alert alert-danger" role="alert">
-              <i class="feather icon-alert-octagon"></i>加载失败！尝试重新加载
-            </p>
-          </nav>
+<div class="list-box">
+  <div class="col-md-6">
+    <div class="list-item-column card card-featured p-0 box-grid">
+      <div class="list-content p-0">
+        <div class="media media-16x9">
+          <a class="media-content" title="Markdown 语法支持测试 v1.2" href="https://imjisen.vercel.app/post/markdown-yu-fa-zhi-chi-ce-shi-v12/"
+            style="background-image:url('/media/images/thumb.png');border-radius: 4px 4px 0 0;">
+            <span class="overlay"></span>
+          </a>
         </div>
+        <a href="https://imjisen.vercel.app/post/markdown-yu-fa-zhi-chi-ce-shi-v12/" class="grid_author_avt">
+          <div class="grid_author_bggo avatar bg-cover"
+            style="background-image: url(/media/images/avatarx.png);"></div>
 
-
-
-
-        <script type="text/javascript">
-          var githubItemTemple = '<div class="col-xs-12 col-sm-6">' +
-            '<div class="card">\n' +
-            '        <div class="p-3"><div class="github_language">{PROJECT_LANGUAGE}</div>' +
-            '          \n' +
-            '          <div class="clear">\n' +
-            '            <div class="text-center text-truncate my-2">{REPO_NAME}</div>\n' +
-            '            <div class="text-center my-2"><i class="feather icon-star-on"></i>{REPO_STARS} Stars / <i class="feather icon-share-2"></i> {REPO_FORKS} Forks</div>\n' +
-            '<div class="text-center text-truncate my-2">{REPO_DESC}</div>' +
-            '<div class="text-center my-2"><a target="_blank" href="{REPO_URL}"><i class="feather icon-navigation"></i>访问</a></div>' +
-            '          </div>\n' +
-            '        </div>\n' +
-            '      </div>' +
-            '</div>';
-          var open = function () {
-
-            var handleGithub = function () {
-              var repoContainer = $('.github_page');//成功在class里的最后展示
-              var loadingContainer = repoContainer.find(".loading-nav");//加载前字符
-              var errorContainer = repoContainer.find(".error-nav");//加载失败字符
-              $.get("https://api.github.com/users/imjisen/repos", function (result) {
-                if (result) {
-                  loadingContainer.addClass("hide");
-                  var ul = $("<div class='col-md-12'><div class=\"row row-sm text-center " +
-                    "github_contain" +
-                    "\"></div></div>");
-                  repoContainer.append(ul);
-                  var contentContainer = $(".github_contain");
-                  for (var i in result) {
-                    var repo = result[i];
-                    repo.updated_at = repo.updated_at.substring(0, repo.updated_at.lastIndexOf("T"));
-                    if (repo.language == null) {
-                      repo.language = "未知";
-                    }
-                    //匹配替换
-                    var item = githubItemTemple.replace("{REPO_NAME}", repo.name)
-                      .replace("{REPO_URL}", repo.html_url)
-                      .replace("{REPO_STARS}", repo.stargazers_count)
-                      .replace("{REPO_FORKS}", repo.forks_count)
-                      .replace("{REPO_DESC}", repo.description)
-                      .replace("{PROJECT_LANGUAGE}", repo.language);
-                    contentContainer.append(item);
-                  }
-                } else {
-                  errorContainer.removeClass("hide");
-                }
-              });
-            };
-
-            return {
-              init: function () {
-                handleGithub();
-              }
-            }
-          };
-
-          jQuery(document).ready(function ($) {
-
-
-            $(open().init);
-          });
-
-        </script>
-
-
-
-        <!-- [清单] end -->
+        </a>
+        <div class="list-body pt-3 pl-3 pr-3">
+          <a class="list-title text-sm h-2x mb-2 mb-md-3 text-hidden" title="Markdown 语法支持测试 v1.2" href="https://imjisen.vercel.app/post/markdown-yu-fa-zhi-chi-ce-shi-v12/">
+            Markdown 语法支持测试 v1.2 </a>
+        </div>
+        <div class="mb-2 mb-md-3 pl-3 pr-3">
+          <div class="d-flex flex-fill align-items-center text-muted text-xs">
+            <div class="d-inline-block ml-md-2">
+              <a title="由Jisen发布" rel="author">Jisen</a>
+            </div>
+            <div class="d-inline-block mx-1 mx-md-2">
+              <i class="text-primary">—</i></div>
+            
+            <div class="d-inline-block">
+              <a href="https://imjisen.vercel.app/tag/90jAytNKe/">test</a>
+            </div>
+            
+            <div class="flex-fill"></div>
+            <div>
+              <time class="mx-1">2 个月前 </time>
+            </div>
+          </div>
+        </div>
       </div>
-
-
     </div>
   </div>
-  <!-- [ 版权 ] start -->
-  <!-- 版权 -->
+</div>
+
+
+
+
+
+                    
+                    
+                </div>
+
+                <div class="pagenavi text-center"><a class="wwww" href="">加载更多</a></div>
+                <!-- [清单] end -->
+            </div>
+        </div>
+    </div>
+    <!-- [ 版权 ] start -->
+    <!-- 版权 -->
 <footer class="footer card py-3 py-lg-3">
 <div class="container">
 	<div class="footer-copyright text-xs px-3">
@@ -412,13 +400,12 @@ pcoded-navbar menu-light
 	</div>
 </div>
 </footer>
-  <!-- [ 版权 ] end -->
+    <!-- [ 版权 ] end -->
 </section>
-<!-- [ 主要内容 ] end -->
-<!--内容 over-->
+        <!--内容 over-->
 
-<!-- 尾部 -->
-</div>
+    <!-- 尾部 -->
+    </div>
 <!--定义全局变量--> 
 <script type="text/javascript">
 window.THEME_URL = 'https://imjisen.vercel.app/'; //获取域名地址 
@@ -517,4 +504,4 @@ window.IS_SLIDER = 1;
 </body>
 
 </html>
-<!--尾部 over-->
+    <!--尾部 over-->
