@@ -270,10 +270,10 @@ ul.contains-task-list {
 }
 
         body.background-blue {
-            background: linear-gradient(to right,#d1eaa3 0,#dbc6eb 100%);
+            background: #a5d8ff;
         }
 
         body.background-blue .pcoded-navbar.theme-horizontal~.pcoded-header[class*=header-] {
-            background: linear-gradient(to right,#d1eaa3 0,#dbc6eb 100%);
+            background: #a5d8ff;
         }
     
