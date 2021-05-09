@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="Gridea静态个人博客">
+<meta name="keywords" content="Gridea 静态个人博客">
 <meta name="description" content="温故而知新 Learn From the Past.">
 <meta name="theme-color" content="#000">
 <title>关于 | Jisen</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1620213109135">
+<link rel="shortcut icon" href="/favicon.ico?v=1620542286499">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -20,7 +20,7 @@
   rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/black/pace-theme-material.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/black/pace-theme-loading-bar.css" rel="stylesheet" />
 
 <link rel="stylesheet" href="/styles/main.css">
 
@@ -31,14 +31,38 @@
   integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
-  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
-  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [['$$', '$$'], ["\\[", "\\]"]]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a', 'annotation', 'annotation-xml'],
+      ignoreHtmlClass: 'tex2jax_ignore|crayon-.*', // 'crayon-' 开头的类，属于Wordpress代码高亮库，这部分不需要处理，否则会导致显示不正确,这部分是正则式，多条之间用'|'分割
+      processHtmlClass: 'tex2jax_process'
+    },
+    //禁用右键菜单	
+    renderActions: {
+      addMenu: [0, '', '']
+    }
+  };
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 
+
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?503f17ad713bd7d6d2fb11407deafd7f";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
 
 
   <meta name="description" content="关于" />
@@ -68,7 +92,7 @@
           
         </div>
         
-          <p class="subtitle">Learn From The Past.</p>
+          <p class="subtitle">Learn From the Past.</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -211,7 +235,7 @@
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">imjisen</p>
+    <p class="site-author-name">jisen</p>
     
   </div>
   <div class="sidebar-item side-item-stat right-motion">
@@ -245,19 +269,6 @@
       </div>
     
   
-  
-    <div class="sidebar-item sidebar-item-social">
-      <div class="social-item">
-        
-          
-            <a href="//github.com/imjisen">
-              <i class="fa fa-github-alt" title="imjisen"></i>
-            </a>
-          
-        
-        
-      </div>
-    </div>
   
 
 
@@ -836,8 +847,6 @@
         <div style="position: relative; width: 140px; height: 140px;">
           
           
-            <img id="zfb" class="reward-img" src="\media\images\custom-zfbImg.jpg" alt="赞赏码">
-          
           
             <img id="wx" class="reward-img" src="\media\images\custom-wxImg.jpg" alt="赞赏码">
           
@@ -847,10 +856,6 @@
       <p class="reward-tip">打开微信扫一扫，即可进行扫码打赏哦</p>
     </div>
     <div class="bottom">
-      
-      <div id="zfbBtn" class="pay-text">
-        支付宝
-      </div>
       
       
       <div id="wxBtn" class="pay-text">
@@ -1231,10 +1236,10 @@
 &lt;p&gt;[转意符](www.google.com)&lt;/p&gt;
 &lt;ul class=&#34;contains-task-list&#34;&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9463674&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9463674&#34;&gt; Todo list&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4316447&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4316447&#34;&gt; Todo list&lt;/label&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;
-&lt;p&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1671609&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1671609&#34;&gt; Todo list&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4032352&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4032352&#34;&gt; Todo list&lt;/label&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;参考式&#34;&gt;参考式&lt;/h3&gt;
@@ -1698,16 +1703,5 @@ games
 
 
 
-
-  <div class="snow-container"></div>
-  <script src="/media/js/bg/canvas-nest.js"></script>
-  <script>
-  const config = {
-    color: '255,0,0',
-    count: 88,
-  };
-  // Using config rendering effect at 'element'.
-  const cn = new CanvasNest(document.querySelector('.snow-container'), config);
-  </script>
 
 </html>
